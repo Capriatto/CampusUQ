@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_wifi"
+        android:title=""
+        android:icon="@drawable/ic_signal_wifi_3_bar_24dp"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_noticias"
+            android:icon="@drawable/icondrawer"
+            android:title="@string/Noticias" />
+        <item
+            android:id="@+id/menu_directorio"
+            android:icon="@drawable/icondrawer"
+            android:title="@string/Directorio" />
+        <item
+            android:id="@+id/menu_mapa"
+            android:icon="@drawable/icondrawer"
+            android:title="@string/Campus" />
+       <!-- <item
+            android:id="@+id/menu_objetosPerdidos"
+            android:icon="@drawable/icondrawer"
+            android:title="@string/ObjetosPerdidos" />
+        -->
+    </group>
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="@string/Ajustes">
+        <menu>
+            <item
+                android:id="@+id/menu_internacionalizacion"
+                android:title="@string/Internacionalizacion" />
+            <item
+                android:id="@+id/menu_sugerencia"
+                android:title="@string/Sugerencias" />
+            <item
+                android:id="@+id/redireccionar"
+                android:title="@string/irUniquindio" />
+        </menu>
+    </item>
+</menu>

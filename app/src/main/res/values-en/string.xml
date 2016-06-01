@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CampusUQ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- strings del menú -->
+    <string name="TituloMenu">CampusUQ</string>
+    <string name="Noticias">News</string>
+    <string name="Directorio">Directory</string>
+    <string name="Sugerencias">Suggestions</string>
+    <string name="Sugerenciatext1">"Please choose a category for the suggestion: "</string>
+    <string name="Sugerenciatext2">"Describe the object: "</string>
+    <string name="Sugerenciatext3">"--SELECT AN OPTION--"</string>
+    <string name="ObjetosPerdidos">Lost stuff</string>
+    <string name="Campus">Map of the university</string>
+    <string name="Internacionalizacion">Change language</string>
+    <string name="Ajustes">Settings</string>
+    <string name="Otros">Other</string>
+    <string name="agregar">Add</string>
+    <string name="internet">Check Network Connection</string>
+    <string name="disponibilidadInternet">Is Internet Available?</string>
+    <string name="afirmativo">Yes</string>
+    <string name="negativo">No</string>
+    <string name="mapa_uq">MAP OF UNIVERSIDAD DEL QUINDIO</string>
+    <string name="compartir">Share in facebook</string>
+    <string name="irUniquindio">Go to the page</string>
+</resources>
+

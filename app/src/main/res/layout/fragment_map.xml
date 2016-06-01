@@ -1,0 +1,294 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.fragment.MapFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/mapa_uq"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.38"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="380dp"
+                    android:src="@drawable/mapauq"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <!--1-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="1.Bloque administrativo #1"
+                android:id="@+id/textView6"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"/>
+            <!--2-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="2.Bloque administrativo #2"
+                android:id="@+id/textView7"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--3-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="3.Ciencias básicas y tecnología"
+                android:id="@+id/textView8"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--4-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="4.Biblioteca infantil"
+                android:id="@+id/textView9"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--5-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="5.Pre-cooperativa juvenil del Quindío"
+                android:id="@+id/textView10"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--6-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="6.Bioterio"
+                android:id="@+id/textView11"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--7-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="7.Sendero cedro rosado"
+                android:id="@+id/textView12"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--8-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="8.Lab. Análisis químico de suelos"
+                android:id="@+id/textView13"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--9-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="9.Mantenimiento"
+                android:id="@+id/textView14"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--10-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="10.Inst. Interdisciplinario de las ciencias"
+                android:id="@+id/textView15"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--11-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="11.Coliseo cubierto"
+                android:id="@+id/textView16"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--12-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="12.Bienestar Universitario"
+                android:id="@+id/textView17"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--13-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="13.Lab. Investigación en post-cosecha"
+                android:id="@+id/textView18"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--14-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="14.Facultad de ciencias agroindustriales"
+                android:id="@+id/textView19"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--15-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="15.Plantas piloto"
+                android:id="@+id/textView20"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--16-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="16.Facultad de ciencias econ. y aministrativas"
+                android:id="@+id/textView21"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--17-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="17.Facultad de educacion"
+                android:id="@+id/textView22"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--18-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="18.Facultad de ingeniería"
+                android:id="@+id/textView23"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--19-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="19.Auditorio Euclides Jaramillo Arango"
+                android:id="@+id/textView24"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--20-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="20.Media torta cultural"
+                android:id="@+id/textView25"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--21-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="21.Centro de salud"
+                android:id="@+id/textView26"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--22-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="22.Parroquia universitaria"
+                android:id="@+id/textView27"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--23-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="23.Facultad de ciencias de la salud"
+                android:id="@+id/textView28"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--24-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="24.Biblioteca Euclides Jaramillo Arango"
+                android:id="@+id/textView29"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+            <!--25-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="25.Lab. de invest. médicas Manuel Elkin Patarroyo"
+                android:id="@+id/textView30"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

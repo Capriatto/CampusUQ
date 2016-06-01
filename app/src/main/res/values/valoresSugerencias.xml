@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="valoresSugerencias">
+        <item>@string/Noticias</item>
+        <item>@string/Directorio</item>
+        <item>@string/Campus</item>
+        <item>@string/ObjetosPerdidos</item>
+    </string-array>
+</resources>

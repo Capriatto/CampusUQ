@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CampusUQ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- strings del menú -->
+    <string name="TituloMenu">CampusUQ</string>
+    <string name="Noticias">Noticias</string>
+    <string name="Directorio">Directorio</string>
+    <string name="Sugerencias">Sugerencias</string>
+    <string name="Sugerenciatext1">"Por favor escoja una categoria para la sugerencia: "</string>
+    <string name="Sugerenciatext2">"Ingrese el texto: "</string>
+    <string name="Sugerenciatext3">"--SELECCIONE--"</string>
+    <string name="ObjetosPerdidos">Objetos Perdidos</string>
+    <string name="Campus">Mapa de la universidad</string>
+    <string name="Internacionalizacion">Cambiar idioma</string>
+    <string name="Ajustes">Ajustes</string>
+    <string name="Otros">Otros</string>
+    <string name="agregar">Agregar</string>
+    <string name="compartir">Compartir en facebook</string>
+    <string name="irUniquindio">Ir a la pagina</string>
+</resources>
+
