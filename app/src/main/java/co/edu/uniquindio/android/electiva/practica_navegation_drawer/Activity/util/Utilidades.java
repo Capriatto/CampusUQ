@@ -21,24 +21,26 @@ import co.edu.uniquindio.android.electiva.practica_navegation_drawer.Activity.fr
 import co.edu.uniquindio.android.electiva.practica_navegation_drawer.R;
 
 /**
- *
  * @author : Arley Sneyder Rico B.
  * @author : Kevin Agudelo Gallego
  * @author : Juan Sebastian Ocampo
  * @version : 1.0
- *
- * Esta clase cambia el idioma de la aplicación
- *
+ *          <p/>
+ *          Esta clase cambia el idioma de la aplicación
  */
 public class Utilidades {
     public final static String MIS_PREFERENCIAS = "MisPreferencias";
     public final static String LENGUAJE_DE_PREFERENCIA = "languaje_preferences";
     public final static String LENGUAJE_ES = "es";
     public final static String LENGUAJE_EN = "en";
+    public static final String NOMBRE_BD = "Sugerencia";
+    public static final String NOMBRE_TABLA = "sugerencias";
+    public static final String CAMPOS_TABLA[] = new String[]{"_ID", "TITULO", "DESCRIPCION"};
 
 
     /**
-     *  Este metodo toma el contexto en donde vamos a cambiar el idioma
+     * Este metodo toma el contexto en donde vamos a cambiar el idioma
+     *
      * @param context
      */
     public static void cambiarIdioma(Context context) {
@@ -57,6 +59,7 @@ public class Utilidades {
 
     /**
      * De este método obtenemos el lenguaje de preferencia (el que tenemos en nuestro celular o predefinido)
+     *
      * @param context
      */
     public static void obtenerLenguaje(Context context) {
@@ -71,6 +74,7 @@ public class Utilidades {
 
     /**
      * es el encargado de mostrar el dialogo de comprobación de internet
+     *
      * @param fragmentManager permite realizar la transacción del dialogo
      * @param nameClass       nombre de la actividad que lo invoco
      */
@@ -82,6 +86,7 @@ public class Utilidades {
 
     /**
      * Este método permite saber si hay conexion disponible a internet.
+     *
      * @return -1= desconectado, 0=conectado, 1=ConectadoWifi, 2=ConectadoDatos
      */
     public static int comprobarConexionInternet(int tipoConexion, Context contexto) {

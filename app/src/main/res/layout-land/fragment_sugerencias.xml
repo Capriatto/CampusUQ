@@ -14,7 +14,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/Sugerencias"
             android:layout_marginLeft="10dp"
-            android:id="@+id/textView"
+            android:id="@+id/titulo"
             android:layout_gravity="left|top" />
 
         <TextView
@@ -22,12 +22,12 @@
             android:layout_height="wrap_content"
             android:text="@string/Sugerenciatext1"
             android:layout_margin="10dp"
-            android:id="@+id/textView5"
+            android:id="@+id/text1"
             android:layout_gravity="right|top" />
 
         <Spinner
             style="@style/spinner_style"
-            android:id="@+id/spinner2"
+            android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@color/colorBlanco"
@@ -42,7 +42,7 @@
             style="@style/Base.V12.Widget.AppCompat.EditText"
             android:layout_width="421dp"
             android:layout_height="78dp"
-            android:id="@+id/editText"
+            android:id="@+id/textSugerencia"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:layout_gravity="left|top" />
