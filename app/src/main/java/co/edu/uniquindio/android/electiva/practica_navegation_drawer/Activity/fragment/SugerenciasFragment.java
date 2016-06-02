@@ -5,6 +5,7 @@ import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,18 +15,18 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import co.edu.uniquindio.android.electiva.practica_navegation_drawer.Activity.util.CRUDSQL;
 import co.edu.uniquindio.android.electiva.practica_navegation_drawer.R;
 
 
 /**
- *
  * @author : Arley Sneyder Rico B.
  * @author : Kevin Agudelo Gallego
  * @author : Juan Sebastian Ocampo
  * @version : 1.0
- *
- *
- * Fragmento que contiene  el layout que contiene las sugerencias que se tienen acerca de la universidad
+ *          <p/>
+ *          <p/>
+ *          Fragmento que contiene  el layout que contiene las sugerencias que se tienen acerca de la universidad
  */
 public class SugerenciasFragment extends Fragment {
     View rootView;
@@ -43,10 +44,20 @@ public class SugerenciasFragment extends Fragment {
         listaSugerencia.add(getString(R.string.ObjetosPerdidos));
         listaSugerencia.add(getString(R.string.Otros));
         //adaptador del "Combobox" dentro del layout
-        ArrayAdapter<String> adaptadorcito = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_spinner_item,listaSugerencia);
+        ArrayAdapter<String> adaptadorcito = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, listaSugerencia);
         adaptadorcito.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adaptadorcito);
         return rootView;
     }
 
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        /**crudsql = new CRUDSQL(getActivity(), 1);
+        setSugerencias(crudsql.getInformacionBD());
+        adaptador = new AdaptadorDePelicula(peliculas, ListaDePeliculasFragment.this);
+        listadoDePeliculas.setAdapter(adaptador);
+        listadoDePeliculas.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
+         **/
+    }
 }
