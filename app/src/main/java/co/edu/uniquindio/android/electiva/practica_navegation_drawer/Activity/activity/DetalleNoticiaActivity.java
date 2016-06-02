@@ -35,4 +35,7 @@ public class DetalleNoticiaActivity extends AppCompatActivity {
         detalleDeNoticia.showDetail(noticia);
     }
 
+
+
+
 }

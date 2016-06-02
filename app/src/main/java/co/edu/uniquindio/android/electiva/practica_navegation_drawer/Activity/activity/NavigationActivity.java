@@ -13,6 +13,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+
 import java.util.ArrayList;
 
 import co.edu.uniquindio.android.electiva.practica_navegation_drawer.Activity.fragment.DetalleNoticiaFragment;
@@ -73,6 +80,7 @@ public class NavigationActivity extends AppCompatActivity implements NoticiasFra
         Log.v("entro", "onCreate");
         super.onCreate(savedInstanceState);
         Utilidades.obtenerLenguaje(this);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_navigation);
         contexto = this.getBaseContext();
         //añadimos el menú desplegable
@@ -81,6 +89,7 @@ public class NavigationActivity extends AppCompatActivity implements NoticiasFra
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navView = (NavigationView) findViewById(R.id.navview);
         navView.setItemIconTintList(null);
+        //Utilidades.getKeyHash(getContexto());
 
         // reemplazamos el fragmento cuando seleccionamos alguna de las opciones del navigation drawer
         noticiasFragment= new NoticiasFragment();
@@ -129,6 +138,24 @@ public class NavigationActivity extends AppCompatActivity implements NoticiasFra
                 return true;
             }
         });
+        CallbackManager callbackManager = CallbackManager.Factory.create();
+        LoginManager.getInstance().registerCallback(callbackManager,
+                new FacebookCallback<LoginResult>() {
+                    @Override
+                    public void onSuccess(LoginResult loginResult) {
+// App code
+                    }
+
+                    @Override
+                    public void onCancel() {
+// App code
+                    }
+
+                    @Override
+                    public void onError(FacebookException error) {
+
+                    }
+                });
     }
 
     /**

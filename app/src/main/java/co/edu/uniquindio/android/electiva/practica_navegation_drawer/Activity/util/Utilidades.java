@@ -3,10 +3,18 @@ package co.edu.uniquindio.android.electiva.practica_navegation_drawer.Activity.u
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.util.Base64;
+import android.util.Log;
 
+import java.security.MessageDigest;
+
+import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
 
 import co.edu.uniquindio.android.electiva.practica_navegation_drawer.Activity.fragment.DialogoInternetFragment;
@@ -91,6 +99,25 @@ public class Utilidades {
                 break;
         }
         return -1;
+    }
+
+    public static void getKeyHash(Context context) {
+        try {
+            PackageInfo info =
+                    context.getPackageManager().getPackageInfo(context.getPackageName(),
+                            PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                String sign = Base64.encodeToString(md.digest(),
+                        Base64.DEFAULT);
+                Log.e("Mi clave HASH:", sign);
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.d("prueba", "1 KeyHash Error: " + e.getMessage());
+        } catch (NoSuchAlgorithmException e) {
+            Log.d("prueba", "2 KeyHash Error: " + e.getMessage());
+        }
     }
 
 }

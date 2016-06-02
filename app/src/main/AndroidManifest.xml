@@ -18,6 +18,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.activity.DetalleNoticiaActivity"></activity>
+        <!--FACEBOOK....-->
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider284833591852418"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />

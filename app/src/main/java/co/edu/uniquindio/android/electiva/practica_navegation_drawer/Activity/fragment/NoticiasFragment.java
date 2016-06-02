@@ -178,4 +178,18 @@ public class NoticiasFragment extends Fragment implements AdaptadorDeNoticia.OnC
         super.onDestroy();
        // unbinder.unbind();
     }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent
+            data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == getActivity().RESULT_OK){
+            Bundle bundle = data.getExtras();
+            String fbData = bundle.toString();
+            Log.d("I am inside resultcode "+fbData, "");
+        }else
+        {
+            Log.d("dfasdfs","I have no idea what is happening :( "+data.getExtras().toString());
+        }
+    }
 }
